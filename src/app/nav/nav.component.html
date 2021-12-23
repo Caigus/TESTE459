@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success" style="font-weight: bold;">
+  <div class="container">
+    <a routerLink="dashboard" class="navbar-brand mx-3">
+      <img src="../../assets/img/logo-footer (1).png"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav container-fluid">
+
+      </ul>
+      <ul class="navbar-nav mx-2">
+        <li class="nav-item active">
+          <a routerLink="Aluguel"  routerLinkActive="active"  class="nav-link">Aluguel <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="Compra" routerLinkActive="active"  class="nav-link">Compra</a>
+        </li>
+        <li class="nav-item dropdown" dropdown>
+          <a id="button-basic" dropdownToggle class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Usuário
+          </a>
+          <div id="dropdown-basic" *dropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a routerLink="login" class="dropdown-item">Login</a>
+            <a routerLink="Cadastrar" class="dropdown-item">Cadastro</a>
+            <a routerLink="dashboard" class="dropdown-item" >Sair</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+ 

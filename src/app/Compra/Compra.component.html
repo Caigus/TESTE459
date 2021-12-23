@@ -1,0 +1,30 @@
+<div class="vamover mt-5">
+<app-titulo [titulo] = 'titulo' ></app-titulo>
+<div class="row ">
+  <div class="col-sm-6" *ngif="ComSelecionado">
+    <div class="row mt-5 " >
+      <div class="col-11">
+      </div>
+    </div>
+  </div>
+  <div>
+    <app-titulo></app-titulo>
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let Com of Compras" >
+          <th scope="row"> {{Com.id}} </th>
+          <th scope="row"> {{Com.nome}} </th>
+          <th scope="row"> {{Com.valor}} </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
